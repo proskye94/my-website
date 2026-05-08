@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Timber & Fern Lodge</title>
+    <meta name="description" content="Sample contact page for a rustic wooded test site.">
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Timber and Fern Lodge home">
+        <span class="brand-mark" aria-hidden="true">TF</span>
+        <span>Timber & Fern</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="trails.html">Trails</a>
+        <a href="cabins.html">Cabins</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <p class="eyebrow">Camp desk</p>
+        <h1>Send a note from the tree line</h1>
+        <p>This form is decorative for testing. It shows layout, fields, and a friendly success message.</p>
+      </section>
+
+      <section class="contact-layout">
+        <form class="contact-form" id="contact-form">
+          <label>
+            Name
+            <input name="name" type="text" placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" placeholder="you@example.com">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Tell us what you are testing..."></textarea>
+          </label>
+          <button class="button primary" type="submit">Send Sample Note</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+        <aside class="notice-panel">
+          <h2>Sample lodge info</h2>
+          <p>123 Pine Hollow Road<br>North Ridge, VT 05001</p>
+          <p>Open for testing all season.</p>
+        </aside>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Timber & Fern Lodge</p>
+      <p>Static GitHub Pages test site</p>
+    </footer>
+    <script src="assets/site.js"></script>
+  </body>
+</html>
