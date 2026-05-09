@@ -22,3 +22,24 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
+const flavorToggles = document.querySelectorAll(".flavor-toggle");
+
+flavorToggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    const item = toggle.closest(".flavor-item");
+
+    if (!item) {
+      return;
+    }
+
+    const isOpen = item.classList.toggle("is-open");
+    const panel = document.getElementById(toggle.getAttribute("aria-controls"));
+
+    toggle.setAttribute("aria-expanded", String(isOpen));
+
+    if (panel) {
+      panel.setAttribute("aria-hidden", String(!isOpen));
+    }
+  });
+});
